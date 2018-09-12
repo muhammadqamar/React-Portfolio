@@ -1,18 +1,5 @@
-body{
 
-  margin:0
-}
-
-%usable{
-
-diplay:block
-
-}
-
-
-$red : 'red';
-html{
-background-color: $red;
-@inherit   %usable
-
+$zeropad: 0px !important;
+.p-b-30{
+  padding-bottom: $zeropad
 }

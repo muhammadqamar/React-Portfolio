@@ -1,6 +1,2 @@
-body {
-  margin: 0; }
-
-html {
-  background-color: "red";
-  @inherit %usable; }
+.p-b-30 {
+  padding-bottom: 0px !important; }
