@@ -1,42 +1,34 @@
 
 import React, { Component } from 'react';
-import fire from '../../fireconfig/config';
-import '../../assets/css/component1.css';
-
-
+import Menu from '../../components/menu/menu';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Images from '../../components/images/images';
+import Contacts from '../../components/contacts/contact';
+import Documents from '../../components/documents/document';
 
 
 
 class Home extends Component {
-  logout() {
-       fire.auth().signOut();
-   }
-     componentDidMount() {
 
-       <script src="../../assets/js/demo1.js" ></script>
-     }
 
   render() {
     return (
-      <div className="container">
+      <BrowserRouter>
+        <div>
 
+          <Switch>
+            <Route path="/" component={Images} exact  />
+              <Route path="/images" component={Images}  />
+                <Route path="/contact" component={Contacts}  />
+                  <Route path="/doc" component={Documents}  />
 
-        <div className="component">
-
-          <button className="cn-button" id="cn-button">+</button>
-          <div className="cn-wrapper" id="cn-wrapper">
-              <ul>
-                <li><a href="#"><span className="icon-picture"></span></a></li>
-                <li><a href="#"><span className="icon-headphones"></span></a></li>
-                <li><a href="#"><span className="icon-home"></span></a></li>
-                <li><a href="#"><span className="icon-facetime-video"></span></a></li>
-                <li><a href="#"><span className="icon-envelope-alt"></span></a></li>
-               </ul>
-          </div>
-          <div id="cn-overlay" className="cn-overlay"></div>
-
+          </Switch>
+            <Menu />
         </div>
-      </div>
+
+      </BrowserRouter>
+
+
 
     );
   }
