@@ -1,2 +1,30 @@
 .p-b-30 {
   padding-bottom: 0px !important; }
+
+#img-container .list-img {
+  background-color: #00000061;
+  height: 100vh; }
+
+#img-container .all-images {
+  margin-top: 90px;
+  overflow-y: auto;
+  height: 85vh; }
+  #img-container .all-images img {
+    margin-bottom: 20px;
+    border: 5px solid #ccc; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
